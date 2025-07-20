@@ -3,7 +3,31 @@
 This code demonstrates a  Retrieval Augmented Generation (RAG) architecture for analyzing workplace accident reports using OpenAI embeddings and FAISS vector store. It also displays the euclidean distance between the similar reports which helped guide the LLM's decision. The lower euclidean distance, the more similar the reports.
 
 ---
+# How it works
 <img width="810" height="507" alt="Screenshot 2025-07-20 at 1 27 59 PM" src="https://github.com/user-attachments/assets/a7dd4af0-cb88-403f-a233-84c3185c2205" />
+When you type in a new accident report, the program goes through the following steps:
+
+1. **Text Embedding:**  
+   The report is converted into a numerical format using a tool from OpenAI. This process is called *embedding*, and it turns your report into a high-dimensional vector (think of it like plotting your report as a point in a giant multi-dimensional graph based on meaning, not just words).
+
+2. **Similarity Search with FAISS:**  
+   FAISS (Facebook AI Similarity Search) is a system that efficiently searches for reports that are *most similar* to the one you just typed in.  
+   It does this by comparing your report's vector to vectors of existing reports using a measurement called **Euclidean distance**. The closer two reports are in this "vector space," the more similar they are in meaning.
+
+3. **Retrieving Top Matches:**  
+   The 5 most similar past reports are retrieved. Their similarity to your report is displayed as a numerical distance — **lower = more similar**.
+
+4. **Decision by the Language Model (LLM):**  
+   The retrieved reports are shown to a large AI model (LLM) from OpenAI along with your input.  
+   The model uses both your report and the similar examples to decide whether the report should be classified as **"Fall"** or **"Not a Fall"**.
+
+5. **Output:**  
+   - You receive the prediction (Fall or Not a Fall).  
+   - You also see the top 5 similar reports, how close they were, and their classifications — this gives transparency into how the AI made its decision.
+
+> *Note: Program currently does not reference OSHA standards/regulations.*
+
+
 
 
 ## Setup Instructions
