@@ -59,6 +59,13 @@ source venv/bin/activate
 python -m venv venv
 venv\Scripts\activate
 ```
+You’ll know it’s active when you see (venv) at the start of your terminal prompt.
+
+To deactivate it when you're done using the program:
+```bash
+deactivate
+```
+> *Note: No need to navigate into the `venv` folder — just activate from your project root folder, `RAG-Approach`.*
 
 ### 3. Install Dependencies
 
@@ -70,7 +77,7 @@ pip install -r requirements.txt
 
 ### 4. Set up the `.env` File
 
-In the root folder of the project (same folder where rag.py lives), create a new file named:
+In the root folder of the project, `RAG-Approach`, create a new file named:
 
 ```
 .env
@@ -101,22 +108,6 @@ python rag.py
 You will be prompted to enter accident reports. Type your input and get predictions and similar report examples.
 
 To exit the program, type `exit` or `quit`.
-
----
-
-## Notes
-
-- Ensure your API key has permissions to access OpenAI Embeddings and GPT-4o.
-- The vector store uses FAISS for efficient similarity search.
-- Lower similarity scores indicate more semantically similar documents.
-
----
-
-## Troubleshooting
-
-- If you encounter line-ending warnings with Git (`CRLF will be replaced by LF`), it can be safely ignored.
-- Do not commit your `venv/` directory to the repository.
-- If you have any questions, feel free to contact the maintainer.
 
 ---
 
