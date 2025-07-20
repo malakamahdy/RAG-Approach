@@ -1,6 +1,6 @@
 # Retrieval Augmented Generation (RAG) Approach
 # This code is a basic RAG architecture for testing purposes.
-# For information on how to run the code, check the README file, or email me at mmahdy@islander.tamucc.edu
+# For information on how to run the code and how it works, check the README file, or email me at mmahdy@islander.tamucc.edu.
 # Malak Mahdy
 
 import os
@@ -55,7 +55,7 @@ def get_similarity_scores(query, k=5):
 
 # Setup messages with color
 print(Fore.CYAN + Style.BRIGHT + "Type 'exit' or 'quit' to stop.")
-print(Fore.YELLOW + "Lower euclidean (distance) scores = More similar documents")
+print(Fore.YELLOW + "Lower Euclidean (distance) scores = More similar documents")
 
 # Loop for handling user continuing or exiting the program
 while True:
