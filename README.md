@@ -3,6 +3,8 @@
 This code demonstrates a  Retrieval Augmented Generation (RAG) architecture for analyzing workplace accident reports using OpenAI embeddings and FAISS vector store. It also displays the euclidean distance between the similar reports which helped guide the LLM's decision. The lower euclidean distance, the more similar the reports.
 
 ---
+<img width="810" height="507" alt="Screenshot 2025-07-20 at 1 27 59 PM" src="https://github.com/user-attachments/assets/a7dd4af0-cb88-403f-a233-84c3185c2205" />
+
 
 ## Setup Instructions
 
@@ -85,6 +87,6 @@ To exit the program, type `exit` or `quit`.
 
 ---
 
-# Developed by Malak Mahdy — mmahdy@islander.tamucc.edu
+**Developed by Malak Mahdy — mmahdy@islander.tamucc.edu**
 
 ---
