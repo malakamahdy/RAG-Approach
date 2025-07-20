@@ -1,10 +1,11 @@
 # RAG-Approach: Retrieval Augmented Generation for Accident Reports
 
-This code demonstrates a  Retrieval Augmented Generation (RAG) architecture for analyzing workplace accident reports using OpenAI embeddings and FAISS vector store. It also displays the euclidean distance between the similar reports which helped guide the LLM's decision. The lower euclidean distance, the more similar the reports.
+This code demonstrates a  Retrieval Augmented Generation (RAG) architecture for analyzing workplace accident reports using OpenAI embeddings and FAISS vector store. It also displays the euclidean distance between the similar reports which helped guide the LLM's decision. The lower the Euclidean distance, the more similar the reports.
 
 ---
-# How it works
+# How it Works
 <img width="810" height="507" alt="Screenshot 2025-07-20 at 1 27 59 PM" src="https://github.com/user-attachments/assets/a7dd4af0-cb88-403f-a233-84c3185c2205" />
+
 When you type in a new accident report, the program goes through the following steps:
 
 1. **Text Embedding:**  
@@ -23,7 +24,7 @@ When you type in a new accident report, the program goes through the following s
 
 5. **Output:**  
    - You receive the prediction (Fall or Not a Fall).  
-   - You also see the top 5 similar reports, how close they were, and their classifications — this gives transparency into how the AI made its decision.
+   - You also see the top 5 similar reports, how close they were, and their classifications — this provides us further transparency into how the AI made its decision.
 
 > *Note: Program currently does not reference OSHA standards/regulations.*
 
@@ -69,8 +70,16 @@ pip install -r requirements.txt
 
 ### 4. Set up the `.env` File
 
-Create a `.env` file in the root directory of the project to store your OpenAI API key:
+In the root folder of the project (same folder where rag.py lives), create a new file named:
 
+```
+.env
+```
+> *Note: Yes, the file does start with a dot!*
+
+Open it in any text editor (VS Code, Notepad, etc.).
+
+Add the following line:
 ```
 OPENAI_API_KEY=openai_api_key_here
 ```
