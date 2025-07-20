@@ -28,7 +28,7 @@ When you type in a new accident report, the program goes through the following s
 
 > *Note: Program currently does not reference OSHA standards/regulations.*
 
-<img width="1437" height="567" alt="Screenshot 2025-07-20 at 1 47 46 PM" src="https://github.com/user-attachments/assets/3ea0fa4c-74ea-49b1-8fa5-5a0bfea35f7f" />
+<img width="1434" height="590" alt="Screenshot 2025-07-20 at 1 49 32 PM" src="https://github.com/user-attachments/assets/340dd3e2-9ade-4074-9cad-ec1bff2c1573" />
 
 
 ## Setup Instructions
