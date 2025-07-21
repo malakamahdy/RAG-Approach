@@ -11,8 +11,8 @@ When you type in a new accident report, the program goes through the following s
 1. **Text Embedding:**  
    The report is converted into a numerical format using a tool from OpenAI. This process is called *embedding*, and it turns your report into a high-dimensional vector (think of it like plotting your report as a point in a giant multi-dimensional graph based on meaning, not just words).
 
-2. **Similarity Search with FAISS:**  
-   FAISS (Facebook AI Similarity Search) is a system that efficiently searches for reports that are *most similar* to the one you just typed in.  
+2. **Similarity Search with Chroma:**  
+   Chroma is a modern vector database designed to efficiently searches for reports that are *most similar* to the one you just typed in.  
    It does this by comparing your report's vector to vectors of existing reports using a measurement called **Euclidean distance**. The closer two reports are in this "vector space," the more similar they are in meaning.
 
 3. **Retrieving Top Matches:**  
