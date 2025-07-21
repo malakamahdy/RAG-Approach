@@ -1,6 +1,6 @@
 # RAG-Approach: Retrieval Augmented Generation for Accident Reports
 
-This code demonstrates a  Retrieval Augmented Generation (RAG) architecture for analyzing workplace accident reports using OpenAI embeddings and FAISS vector store. It also displays the euclidean distance between the similar reports which helped guide the LLM's decision. The lower the Euclidean distance, the more similar the reports.
+This program demonstrates a  Retrieval Augmented Generation (RAG) architecture for analyzing workplace accident reports.
 
 ---
 # How it Works
@@ -28,7 +28,7 @@ When you type in a new accident report, the program goes through the following s
 
 > *Note: Program currently does not reference OSHA standards/regulations.*
 
-
+<img width="1434" height="590" alt="Screenshot 2025-07-20 at 1 49 32 PM" src="https://github.com/user-attachments/assets/340dd3e2-9ade-4074-9cad-ec1bff2c1573" />
 
 
 ## Setup Instructions
@@ -99,7 +99,7 @@ Make sure the file `accident_examples.csv` is in the project directory. This fil
 
 ### 6. Run the Program
 
-Run the main script to start the interactive RAG system:
+Run the main script to start testing with the RAG system:
 
 ```bash
 python rag.py
