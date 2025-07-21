@@ -99,7 +99,7 @@ Make sure the file `accident_examples.csv` is in the project directory. This fil
 
 ### 6. Run the Program
 
-Run the main script to start the interactive RAG system:
+Run the main script to start testing with the RAG system:
 
 ```bash
 python rag.py
